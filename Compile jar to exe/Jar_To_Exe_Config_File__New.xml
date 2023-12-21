@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>..\dist\AttendanceReader.jar</jar>
+  <outfile>Attendance Monitor.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>high</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>am_logo.ico</icon>
+  <singleInstance>
+    <mutexName>AttendanceSystem</mutexName>
+    <windowTitle></windowTitle>
+  </singleInstance>
+  <classPath>
+    <mainClass>UI.Splash</mainClass>
+    <cp>..\dist\lib\AbsoluteLayout.jar</cp>
+    <cp>..\dist\lib\activation-1.1.1.jar</cp>
+    <cp>..\dist\lib\Filters.jar</cp>
+    <cp>..\dist\lib\filters-2.0.235.jar</cp>
+    <cp>..\dist\lib\flatlaf-2.2.jar</cp>
+    <cp>..\dist\lib\flatlaf-2.4.jar</cp>
+    <cp>..\dist\lib\hbtn.jar</cp>
+    <cp>..\dist\lib\mysql-connector-java-8.0.28.jar</cp>
+    <cp>..\dist\lib\sqlite-jdbc-3.36.0.3.jar</cp>
+  </classPath>
+  <jre>
+    <path>Source\JRE</path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>1.0.0</minVersion>
+    <maxVersion>19.8.0</maxVersion>
+    <jdkPreference>jdkOnly</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.2.0</fileVersion>
+    <txtFileVersion>3.0.0.0</txtFileVersion>
+    <fileDescription>Attendance System</fileDescription>
+    <copyright>Copyright © Interithm. All rights reserved.</copyright>
+    <productVersion>1.0.2.0</productVersion>
+    <txtProductVersion>3.0.0.0</txtProductVersion>
+    <productName>Attendance System</productName>
+    <companyName>Interithm</companyName>
+    <internalName>Attendance System</internalName>
+    <originalFilename>Attendance System.exe</originalFilename>
+    <trademarks>Interithm Attendance System</trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+  <messages>
+    <startupErr>An error occurred while starting the application. Please contact interithm.</startupErr>
+    <bundledJreErr>This application was configured to use a bundled Java Runtime Environment but the runtime is missing or corrupted.</bundledJreErr>
+    <jreVersionErr>This application requires a Java Runtime Environment</jreVersionErr>
+    <launcherErr>The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.</launcherErr>
+    <instanceAlreadyExistsMsg>An application instance is already running.</instanceAlreadyExistsMsg>
+  </messages>
+</launch4jConfig>
